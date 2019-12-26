@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Query>
+  <Columns>
+    <Column Name="BH" Description="类别" Type="VarChar" Value="">BH</Column>
+  </Columns>  
+</Query>

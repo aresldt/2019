@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <Fields>
+    <Field Name="GDFL" Type="VarChar" Size="30" Precision="0" Scale="0" ColumnText="分类" PrimaryKey="1" ColumnWidth="100" ReadOnly="1">GDFL</Field>
+    <Field Name="GDDESC" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="分类说明" ColumnWidth="200" SqlInsert="1" SqlUpdate="1">GDDESC</Field>
+    <Field Name="GDHZDESC" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="分类汇总说明" ColumnWidth="200" SqlInsert="1" SqlUpdate="1">GDHZDESC</Field>
+  </Fields>
+  <Sqls>
+    <Select>SELECT GDFL, GDDESC, GDHZDESC FROM #TABLE.GDFL</Select>
+    <Insert>INSERT INTO #TABLE.GDFL</Insert>
+    <Update>UPDATE #TABLE.GDFL SET### WHERE GDFL=?</Update>
+    <Delete>DELETE FROM #TABLE.GDFL WHERE GDFL=?</Delete>
+  </Sqls>
+</Data>

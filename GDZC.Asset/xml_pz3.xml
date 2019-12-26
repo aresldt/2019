@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <Fields>
+    <Field Name="SG01" ColumnText="段1" ColumnWidth="100">SG01</Field>
+    <Field Name="SG02" ColumnText="段2" ColumnWidth="100">SG02</Field>
+    <Field Name="SG03" ColumnText="段3" ColumnWidth="100">SG03</Field>
+    <Field Name="SG04" ColumnText="段4" ColumnWidth="100">SG04</Field>
+    <Field Name="SG05" ColumnText="段5" ColumnWidth="100">SG05</Field>
+    <Field Name="LHDRAM" ColumnText="借方" ColumnWidth="100">LHDRAM</Field>
+    <Field Name="LHCRAM" ColumnText="贷方" ColumnWidth="100">LHCRAM</Field>
+    <Field Name="DESC" ColumnText="描述" ColumnWidth="300">ZCYZ</Field>
+  </Fields>
+  <Sqls>
+    <Select>
+      SELECT SG01, SG02, SG03, SG04, SG05, LHDRAM, LHCRAM, DESC  FROM (
+      SELECT TRIM(SVLDES)||TRIM(ZCNAME)|| '处置'  AS DESC, '30' AS SG01, '00' AS SG02, '1601'||TRIM(ZCCWFL) AS SG03, '' AS SG04, '' AS SG05, 0 AS LHDRAM, SUM(ZCYZ) AS LHCRAM FROM v61ef.GDZC INNER JOIN v61ef.GSV ON ZCBM=SVSGVL AND SVSGMN ='DEPT' WHERE SUBSTR(CHAR(ZCBFDTE),1,6)='203001' and zcstat='10'GROUP BY TRIM(SVLDES)||TRIM(ZCNAME)||'处置', '1601'||TRIM(ZCCWFL)
+      UNION ALL SELECT TRIM(SVLDES)||TRIM(ZCNAME)||'处置'AS DESC, '30' AS SG01, '00' AS SG02, '1602'||TRIM(ZCCWFL) AS SG03, '' AS SG04, '' AS SG05, SUM(ZCLJZJ) AS LHDRAM, 0 AS LHCRAM FROM v61ef.GDZC INNER JOIN v61ef.GSV ON ZCBM=SVSGVL AND SVSGMN ='DEPT' WHERE SUBSTR(CHAR(ZCBFDTE),1,6)='203001' and zcstat='10' GROUP BY TRIM(SVLDES)||TRIM(ZCNAME)||'处置', '1602'||TRIM(ZCCWFL)
+      UNION ALL SELECT TRIM(SVLDES)||TRIM(ZCNAME)||'处置'AS DESC, '30' AS SG01, '00' AS SG02, '1606' AS SG03, '' AS SG04, '' AS SG05, SUM(ZCYZ-ZCLJZJ) AS LHDRAM, 0 AS LHCRAM FROM v61ef.GDZC INNER JOIN v61ef.GSV ON ZCBM=SVSGVL AND SVSGMN ='DEPT' WHERE SUBSTR(CHAR(ZCBFDTE),1,6)='203001' and zcstat='10' GROUP BY TRIM(SVLDES)||TRIM(ZCNAME)||'处置'
+      ) AS A ORDER BY DESC
+    </Select>
+    <Insert></Insert>
+    <Update></Update>
+    <Delete></Delete>
+  </Sqls>
+</Data>

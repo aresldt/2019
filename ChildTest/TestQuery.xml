@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Query>
+  <Columns>
+    <Column Name="TDECIMAL" Description="浮点数字" Type="Decimal" Value="">TTDTE</Column>
+    <Column Name="TVARCHAR" Description="字符窜" Type="VarChar" Value="">TTYPE</Column>
+  </Columns>
+</Query>

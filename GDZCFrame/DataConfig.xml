@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <UpdateServer>http://192.168.200.44/GDZC/UpdateVersion.xml</UpdateServer>
+  <Connection>ODBC</Connection>
+  <ConnectionString>DSN=BPCSLIB;</ConnectionString>
+  <DataBase>DB2_AS400</DataBase>
+  <LibraryName>GDZC</LibraryName>
+  <PreFix>Z</PreFix>
+  <ConnectionLoad>1</ConnectionLoad>
+  <ApplicationLock>0</ApplicationLock>
+  <Host>192.168.200.30</Host>
+  <Service>9237</Service>
+  <Configuration>AP2NEWI/NWICFG(NWICFG)</Configuration>
+  <Pip>1</Pip>
+  <Converter>NLSCHSCV.DLL</Converter>
+  <Librarylistentry>AP3NEWI</Librarylistentry>
+  <Database>V61dF</Database>
+  <SystemIps>
+    <Ip1>192.168.200.33</Ip1>
+    <Ip2>192.168.200.32</Ip2>
+  </SystemIps>
+  <QueryWindow>1</QueryWindow>
+</appSettings>

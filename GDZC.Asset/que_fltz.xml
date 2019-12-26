@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Query>
+  <Columns>
+    <Column Name="ZCFL" Type="VarChar" Description="分类">ZCFL</Column>
+  </Columns>
+</Query>

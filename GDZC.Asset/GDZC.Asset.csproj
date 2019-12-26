@@ -1,0 +1,352 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F6ABD09-3984-4798-B945-A9F6FD2A5592}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GDZC.Asset</RootNamespace>
+    <AssemblyName>GDZC.Asset</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cost.cs" />
+    <Compile Include="Depreciation.cs" />
+    <Compile Include="frm_asset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_asset.Designer.cs">
+      <DependentUpon>frm_asset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_depreciation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_depreciation.Designer.cs">
+      <DependentUpon>frm_depreciation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_fl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_fl.Designer.cs">
+      <DependentUpon>frm_fl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_fltz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_fltz.Designer.cs">
+      <DependentUpon>frm_fltz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_fltzbm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_fltzbm.Designer.cs">
+      <DependentUpon>frm_fltzbm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_fltzhz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_fltzhz.Designer.cs">
+      <DependentUpon>frm_fltzhz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_syjh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_syjh.Designer.cs">
+      <DependentUpon>frm_syjh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_syjhyf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_syjhyf.Designer.cs">
+      <DependentUpon>frm_syjhyf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tzhz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tzhz.Designer.cs">
+      <DependentUpon>frm_tzhz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_xzh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_xzh.Designer.cs">
+      <DependentUpon>frm_xzh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_asset.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_asset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="que_xzhxml" />
+    <Content Include="que_pz2.xml" />
+    <EmbeddedResource Include="xml_pz3.xml" />
+    <EmbeddedResource Include="xml_fltzhzbf.xml" />
+    <EmbeddedResource Include="xml_fltzbmbf.xml" />
+    <EmbeddedResource Include="xml_htfltzhzbf.xml" />
+    <EmbeddedResource Include="xml_htfltzhz.xml" />
+    <EmbeddedResource Include="xml_httzhz.xml" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Scrap.cs" />
+    <Compile Include="frm_queryasset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_queryasset.Designer.cs">
+      <DependentUpon>frm_queryasset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_pz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_pz.Designer.cs">
+      <DependentUpon>frm_pz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_syjhht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_syjhht.Designer.cs">
+      <DependentUpon>frm_syjhht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_htfltzhz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_htfltzhz.Designer.cs">
+      <DependentUpon>frm_htfltzhz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_httzhz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_httzhz.Designer.cs">
+      <DependentUpon>frm_httzhz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_fltzbmbf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_fltzbmbf.Designer.cs">
+      <DependentUpon>frm_fltzbmbf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_fltzhzbf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_fltzhzbf.Designer.cs">
+      <DependentUpon>frm_fltzhzbf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_htfltzhzbf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_htfltzhzbf.Designer.cs">
+      <DependentUpon>frm_htfltzhzbf.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseService\BaseService.csproj">
+      <Project>{80882EE7-67F6-45B4-9F88-22B0467CE711}</Project>
+      <Name>BaseService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{18EAA7CB-7377-421A-9C16-CE48FBA24087}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MdiChild\MdiChild.csproj">
+      <Project>{5C3FFE34-5606-4DD2-AFE9-37A7C4711B71}</Project>
+      <Name>MdiChild</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xml_asset.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_depreciation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_depreciation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tzhz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_tzhz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="que_asset.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_fltz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_fltz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="que_tzhz.xml" />
+    <EmbeddedResource Include="xml_tzhz.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_fltzhz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_fltzhz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="que_fltz.xml" />
+    <EmbeddedResource Include="xml_fltz.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_fltzbm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_fltzbm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="que_fltzhz.xml" />
+    <EmbeddedResource Include="xml_fltzhz.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_fl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_fl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_syjh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_syjh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_syjhyf.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_syjhyf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="que_fltzbm.xml" />
+    <EmbeddedResource Include="xml_fltzbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="que_fl.xml" />
+    <EmbeddedResource Include="xml_fl.xml" />
+    <EmbeddedResource Include="frm_queryasset.resx">
+      <DependentUpon>frm_queryasset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_pz.resx">
+      <DependentUpon>frm_pz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xml_pz1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xml_pz2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_xzh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_xzh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xml_queryasset.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xml_xzh.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="que_pz1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="que_queryasset.xml" />
+    <EmbeddedResource Include="frm_syjhht.resx">
+      <DependentUpon>frm_syjhht.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_htfltzhz.resx">
+      <DependentUpon>frm_htfltzhz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_httzhz.resx">
+      <DependentUpon>frm_httzhz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_fltzbmbf.resx">
+      <DependentUpon>frm_fltzbmbf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_fltzhzbf.resx">
+      <DependentUpon>frm_fltzhzbf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_htfltzhzbf.resx">
+      <DependentUpon>frm_htfltzhzbf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

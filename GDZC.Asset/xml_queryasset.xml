@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <Fields>
+    <Field Name="ZCID" Type="VarChar" Size="10" Precision="0" Scale="0" ColumnText="编号" PrimaryKey="1" ColumnWidth="80" SqlInsert="1" SqlUpdate="1">ZCID</Field>
+    <Field Name="ZCZCFL" Type="VarChar" Size="1" Precision="0" Scale="0" ColumnText="分类" ColumnWidth="80" SqlInsert="1" SqlUpdate="1">ZCZCFL</Field>
+    <Field Name="ZCSTAT" Type="Decimal" Size="3" Precision="3" Scale="0" ColumnText="状态" ColumnWidth="60" SqlInsert="1" SqlUpdate="1">ZCSTAT</Field>
+    <Field Name="ZCNAME" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="名称" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCNAME</Field>
+    <Field Name="ZCZJGC" Type="Decimal" Size="1" Precision="1" Scale="0" ColumnText="在建" ColumnWidth="30" SqlInsert="1" SqlUpdate="1">ZCZJGC</Field>
+    <Field Name="ZCBM" Type="VarChar" Size="2" Precision="0" Scale="0" ColumnText="部门" ColumnWidth="30" SqlInsert="1" SqlUpdate="1">ZCBM</Field>
+    <Field Name="ZCCWFL" Type="VarChar" Size="3" Precision="0" Scale="0" ColumnText="科目分类" ColumnWidth="40" SqlInsert="1" SqlUpdate="1">ZCCWFL</Field>
+    <Field Name="ZCFL" Type="VarChar" Size="9" Precision="0" Scale="0" ColumnText="详细分类" ColumnWidth="60" SqlInsert="1" SqlUpdate="1">ZCFL</Field>
+    <Field Name="ZCFL1" Type="VarChar" Size="3" Precision="0" Scale="0" ColumnText="详细分类1" ColumnWidth="60" SqlInsert="1" SqlUpdate="1">ZCFL1</Field>
+    <Field Name="ZCFL2" Type="VarChar" Size="3" Precision="0" Scale="0" ColumnText="详细分类2" ColumnWidth="60" SqlInsert="1" SqlUpdate="1">ZCFL2</Field>
+    <Field Name="ZCFL3" Type="VarChar" Size="3" Precision="0" Scale="0" ColumnText="详细分类3" ColumnWidth="60" SqlInsert="1" SqlUpdate="1">ZCFL3</Field>
+    <Field Name="ZCUF1" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="编号" ColumnWidth="140" SqlInsert="1" SqlUpdate="1">ZCUF1</Field>
+    <Field Name="ZCUF3" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="规格" ColumnWidth="80" SqlInsert="1" SqlUpdate="1">ZCUF3</Field>
+    <Field Name="ZCUF4" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="名称" ColumnWidth="80" SqlInsert="1" SqlUpdate="1">ZCUF4</Field>
+    <Field Name="ZCUF5" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="新增日期" ColumnWidth="80" SqlUpdate="1">ZCUF5</Field>
+    <Field Name="ZCUF6" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="主管部门" ColumnWidth="80" SqlUpdate="1">ZCUF6</Field>
+    <Field Name="ZCUF7" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCUF7</Field>
+    <Field Name="ZCUF8" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCUF8</Field>
+    <Field Name="ZCUF9" Type="VarChar" Size="100" Precision="0" Scale="0" ColumnText="人员" ColumnWidth="60" SqlInsert="1" SqlUpdate="1">ZCUF9</Field>
+    <Field Name="ZCZJZ" Type="Decimal" Size="1" Precision="1" Scale="0" ColumnText="增减" ColumnWidth="40"  PrimaryKey="1" SqlInsert="1" SqlUpdate="1">ZCZJZ</Field>
+    <Field Name="ZCZJZZ" Type="Decimal" Size="15" Precision="15" Scale="2" ColumnText="增减值" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCZJZZ</Field>
+    <Field Name="ZCNX" Type="Decimal" Size="15" Precision="15" Scale="2" ColumnText="年限" ColumnWidth="40" SqlInsert="1" SqlUpdate="1">ZCZJZZ</Field>
+    <Field Name="ZCSYNX" Type="Decimal" Size="15" Precision="15" Scale="2" ColumnText="剩余年限" ColumnWidth="40" SqlInsert="1" SqlUpdate="1">ZCZJZZ</Field>
+    <Field Name="ZCDTE" Type="Decimal" Size="8" Precision="8" Scale="0" ColumnText="安装日期" ColumnWidth="80" SqlInsert="1" SqlUpdate="1">ZCDTE</Field>
+    <Field Name="ZCYZ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="原值" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCYZ</Field>
+    <Field Name="ZCZMYZ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="帐面原值" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCZMYZ</Field>
+    <Field Name="ZCLJZJ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="累计折旧" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCLJZJ</Field>
+    <Field Name="ZCNZJ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="年折旧" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCNZJ</Field>
+    <Field Name="ZCYZJ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="月折旧" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCYZJ</Field>
+    <Field Name="ZCJC" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="折旧基础" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCJC</Field>
+    <Field Name="ZCCZ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="残值" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCCZ</Field>
+    <Field Name="ZCYZJZ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="净值" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">ZCYZJZ</Field>
+    <Field Name="HTLJZJ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="累计折旧" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">HTLJZJ</Field>
+    <Field Name="HTNZJ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="年折旧" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">HTNZJ</Field>
+    <Field Name="HTYZJ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="月折旧" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">HTYZJ</Field>
+    <Field Name="HTJC" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="折旧基础" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">HTJC</Field>
+    <Field Name="HTCZ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="残值" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">HTCZ</Field>
+    <Field Name="HTYZJZ" Type="Decimal" Size="15" Precision="2" Scale="0" ColumnText="净值" ColumnWidth="100" SqlInsert="1" SqlUpdate="1">HTYZJZ</Field>
+    <Field Name="ZCMNTH" Type="Decimal" Size="6" Precision="6" Scale="0" ColumnText="折旧月份" ColumnWidth="80" SqlInsert="1" SqlUpdate="1">ZCMNTH</Field>
+    <Field Name="ZCBFDTE" Type="Decimal" Size="6" Precision="6" Scale="0" ColumnText="报废日期" ColumnWidth="80" SqlInsert="1" SqlUpdate="1">ZCBFDTE</Field>
+    <Field Name="ZCJZDTE" Type="Decimal" Size="6" Precision="6" Scale="0" ColumnText="减值日期" ColumnWidth="80" SqlInsert="1" SqlUpdate="1">ZCJZDTE</Field>
+    <Field Name="ZCENUSR" Type="VarChar" Size="30" Precision="0" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCENUSR</Field>
+    <Field Name="ZCENDT" Type="Decimal" Size="8" Precision="8" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCENDT</Field>
+    <Field Name="ZCENTM" Type="Decimal" Size="6" Precision="6" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCENTM</Field>
+    <Field Name="ZCMNUSR" Type="VarChar" Size="30" Precision="0" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCMNUSR</Field>
+    <Field Name="ZCMNDT" Type="Decimal" Size="8" Precision="8" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCMNDT</Field>
+    <Field Name="ZCMNTM" Type="Decimal" Size="6" Precision="6" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCMNTM</Field>
+    <Field Name="ZCTNUSR" Type="VarChar" Size="30" Precision="0" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCTNUSR</Field>
+    <Field Name="ZCTNDT" Type="Decimal" Size="8" Precision="8" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCTNDT</Field>
+    <Field Name="ZCTNTM" Type="Decimal" Size="6" Precision="6" Scale="0" ColumnVisible="0" SqlInsert="1" SqlUpdate="1">ZCTNTM</Field>
+  </Fields>
+  <Sqls>
+    <Select>SELECT ZCID, SUBSTR(ZCID,1,1) ZCZCFL, ZCSTAT, ZCNAME, ZCZJGC, ZCBM, ZCCWFL, ZCFL, SUBSTR(ZCFL,1,3) ZCFL1, SUBSTR(ZCFL,4,3) ZCFL2, SUBSTR(ZCFL,7,3) ZCFL3, ZCUF1, ZCUF3, ZCUF4, ZCUF5, ZCUF6, ZCUF7, ZCUF8, ZCUF9, ZCZJZ, ZCZJZZ, ZCNX, CASE WHEN ZCSTAT=8 THEN 0 ELSE ZCSYNX END AS ZCSYNX, ZCDTE, ZCYZ, ZCYZ-ZCZJZZ ZCZMYZ, ZCLJZJ, ZCNZJ, ZCYZJ, ZCJC, ZCCZ, ZCYZ-ZCLJZJ AS ZCYZJZ, HTLJZJ, HTNZJ, HTYZJ, HTJC, HTCZ, ZCYZ-HTLJZJ AS HTYZJZ, ZCMNTH, ZCBFDTE, ZCJZDTE, ZCENUSR, ZCENDT, ZCENTM, ZCMNUSR, ZCMNDT, ZCMNTM, ZCTNUSR, ZCTNDT, ZCTNTM FROM #SMG.GDZC</Select>
+    <Insert>INSERT INTO #SMG.GDZC</Insert>
+    <Update>UPDATE #SMG.GDZC SET### WHERE ZCID=? AND ZCZJZ=?</Update>
+    <Delete>DELETE FROM #SMG.GDZC WHERE ZCID=? AND ZCZJZ=?</Delete>
+  </Sqls>
+</Data>

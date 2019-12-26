@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <Fields>
+    <Field Name="ZCID" ColumnText="类别" ColumnWidth="100">ZCID</Field>
+    <Field Name="XZH" ColumnText="最大序号" ColumnWidth="100">XZH</Field>
+  </Fields>
+  <Sqls>
+    <Select>
+      SELECT SUBSTR(ZCID,1,1) ZCID, MAX(SUBSTR(ZCID,6,5)) XZH FROM #SMG.GDZC GROUP BY SUBSTR(ZCID,1,1)
+    </Select>
+    <Insert></Insert>
+    <Update></Update>
+    <Delete></Delete>
+  </Sqls>
+</Data>

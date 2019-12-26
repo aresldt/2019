@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Query>
+  <Columns>
+    <Column Name="GDFL" Type="VarChar" Value="" Description="分类">GDFL</Column>
+  </Columns>
+</Query>

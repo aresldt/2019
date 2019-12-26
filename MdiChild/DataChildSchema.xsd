@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataChildSchema" elementFormDefault="qualified" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Fields">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Field" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="Name" type="xs:string" />
+                      <xs:attribute type="xs:string" name="Type" />
+                      <xs:attribute name="Size" type="xs:int" />
+                      <xs:attribute name="Precision" type="xs:int" />
+                      <xs:attribute name="Scale" type="xs:int" />
+                      <xs:attribute name="PrimaryKey" type="xs:int" />
+                      <xs:attribute name="ColumnText" type="xs:string" />
+                      <xs:attribute name="ColumnWidth" type="xs:int" />
+                      <xs:attribute name="ColumnVisible" type="xs:int" />
+                      <xs:attribute name="ColumnSort" type="xs:int" />
+                      <xs:attribute name="ColumnDefault" type="xs:string" />
+                      <xs:attribute name="ReadOnly" type="xs:int" />
+                      <xs:attribute name="AutoIncrement" type="xs:int" />
+                      <xs:attribute name="IncrementSeed" type="xs:int" />
+                      <xs:attribute name="IncrementStep" type="xs:int" />
+                      <xs:attribute name="SqlInsert" type="xs:int" />
+                      <xs:attribute name="SqlUpdate" type="xs:int" />
+                      <xs:attribute name="ControlChange" type="xs:int" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sqls">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Select">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string" />
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Insert">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string" />
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Update">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string" />
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Delete">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string" />
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Fields>
+    <Field Name="TINT" Type="Int" Size="4" Precision="0" Scale="0" PrimaryKey="1" ColumnText="整型" ColumnWidth="100" AutoIncrement="1" IncrementSeed="1" IncrementStep="1">TINT</Field>
+    <Field Name="TDECIMAL" Type="Decimal" Size="15" Precision="15" Scale="5" ColumnText="浮点数字" ColumnWidth="200" SqlInsert="1" SqlUpdate="1" ControlChange="1">TDECIMAL</Field>
+    <Field Name="TVARCHAR" Type="VarChar" Size="10" Precision="0" Scale="0" ColumnText="字符串" ColumnWidth="200" SqlInsert="1" SqlUpdate="1"  ControlChange="1">TVARCHAR</Field>
+  </Fields>
+  <Sqls>
+    <Select>SELECT TINT, TDECIMAL, TVARCHAR FROM CLLIB.TTEST</Select>
+    <Insert>INSERT INTO CLLIB.TTEST</Insert>
+    <Update>UPDATE CLLIB.TTEST SET### WHERE TINT=?</Update>
+    <Delete>DELETE FROM CLLIB.TTEST WHERE TINT=?</Delete>
+  </Sqls>
+</Data>

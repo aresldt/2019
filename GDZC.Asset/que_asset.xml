@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Query>
+  <Columns>
+    <Column Name="ZCID" Description="编号" Type="VarChar" Value="">ZCID</Column>
+    <Column Name="ZCNAME" Description="名称" Type="VarChar" Value="">ZCNAME</Column>
+    <Column Name="ZCSTAT" Description="状态" Type="Decimal" Value="">ZCSTAT</Column>
+    <Column Name="SUBSTR(ZCID,1,1)" Description="类别" Type="VarChar" Value="">SUBSTR(ZCID,1,1)</Column>
+    <Column Name="ZCFL" Description="分类" Type="VarChar" Value="">ZCFL</Column>
+    <Column Name="ZCDTE" Description="建立日期" Type="Decimal" Value="">ZCDTE</Column>
+    <Column Name="ZCUF5" Description="新增日期" Type="Decimal" Value="">ZCUF5</Column>
+    <Column Name="ZCBFDTE" Description="报废日期" Type="Decimal" Value="">ZCBFDTE</Column>
+    <Column Name="ZCJZDTE" Description="减值日期" Type="Decimal" Value="">ZCJZDTE</Column>
+    <Column Name="ZCYZ" Description="原值" Type="Decimal" Value="">ZCYZ</Column>
+    <Column Name="ZCLJZJ" Description="累计折旧" Type="Decimal" Value="">ZCLJZJ</Column>
+    <Column Name="ZCYZJ" Description="月折旧" Type="Decimal" Value="">ZCYZJ</Column>
+    <Column Name="ZCUF1" Description="编码" Type="VarChar" Value="">ZCUF1</Column>
+    <Column Name="ZCBM" Description="部门" Type="VarChar" Value="">ZCBM</Column>
+  </Columns>
+</Query>

@@ -1,0 +1,254 @@
+--创建新表 gdzc.zparameter。
+-- gdzc.zparameter : 参数表
+-- 	tid : Parameter ID
+-- 	tname : Parameter Name
+-- 	tval1 : Parameter Value 1
+-- 	tval2 : Parameter Value 2
+-- 	ttext : Comment
+-- 	tused : Parameter Row Used
+-- 	tmndt : Last Maintenance Date
+-- 	tmntm : Last Maintenance Time
+-- 	tmnus : Last Maintenance User
+-- 	tendt : Create Date
+-- 	tentm : Create Time
+-- 	tenus : Create By User  
+create table gdzc.zparameter ( 
+	tid INTEGER not null,
+	tname VARCHAR(30) ccsid 935 default null,
+	tval1 VARCHAR(30) default null,
+	tval2 VARCHAR(30) default null,
+	ttext VARCHAR(30) ccsid 935 default null,
+	tused INTEGER default null,
+	tmndt DECIMAL(8,0) default null,
+	tmntm DECIMAL(6,0) default null,
+	tmnus VARCHAR(30) default null,
+	tendt DECIMAL(8,0) default null,
+	tentm DECIMAL(6,0) default null,
+	tenus VARCHAR(30) default null, constraint gdzc.zparameter_PK primary key (tid) );
+label on column gdzc.zparameter ( 
+	tid TEXT IS 'Parameter ID',
+	tname TEXT IS 'Parameter Name',
+	tval1 TEXT IS 'Parameter Value 1',
+	tval2 TEXT IS 'Parameter Value 2',
+	ttext TEXT IS 'Comment',
+	tused TEXT IS 'Parameter Row Used',
+	tmndt TEXT IS 'Last Maintenance Date',
+	tmntm TEXT IS 'Last Maintenance Time',
+	tmnus TEXT IS 'Last Maintenance User',
+	tendt TEXT IS 'Create Date',
+	tentm TEXT IS 'Create Time',
+	tenus TEXT IS 'Create By User' ) ;   
+
+-- 创建新表 gdzc.zright。
+-- gdzc.zright : 权限表
+-- 	ruid : User ID
+-- 	rmid : Module ID
+-- 	rname : Control Name
+-- 	rtext : Comment
+-- 	rused : Right Row Used
+-- 	rmndt : Last Maintenance Date
+-- 	rmntm : Last Maintenance Time
+-- 	rmnus : Last Maintenance User
+-- 	rendt : Create Date
+-- 	tentm : Create Time
+-- 	tenus : Create By User  
+create table gdzc.zright (
+	ruid VARCHAR(30) not null,
+	rmid INTEGER not null,
+	rname VARCHAR(30) not null,
+	rtext VARCHAR(30) ccsid 935 default null,
+	rused INTEGER default null,
+	rmndt DECIMAL(8,0) default null,
+	rmntm DECIMAL(6,0) default null,
+	rmnus VARCHAR(30) default null,
+	rendt DECIMAL(8,0) default null,
+	rentm DECIMAL(6,0) default null,
+	renus VARCHAR(30) default null ,constraint gdzc.zright_PK primary key (ruid, rmid, rname));  
+label on column gdzc.zright (
+	ruid TEXT IS 'User ID',
+	rmid TEXT IS 'Module ID',
+	rname TEXT IS 'Control Name',
+	rtext TEXT IS 'Comment',
+	rused TEXT IS 'Right Row Used',
+	rmndt TEXT IS 'Last Maintenance Date',
+	rmntm TEXT IS 'Last Maintenance Time',
+	rmnus TEXT IS 'Last Maintenance User',
+	rendt TEXT IS 'Create Date',
+	rentm TEXT IS 'Create Time',
+	renus TEXT IS 'Create By User' ) ;   
+
+-- 创建新表 gdzc.zmodule。
+-- gdzc.zmodule : 模块表
+-- 	mid : Module ID
+-- 	mname : Module Name
+-- 	mpid : Module Parent ID
+-- 	mspac : Module NameSpace
+-- 	mclas : Module ClassName
+-- 	mtype : Module Type
+-- 	mbubb : Order
+-- 	mtext : Comment
+-- 	mused : Module Row Used
+-- 	mmndt : Last Maintenance Date
+-- 	mmntm : Last Maintenance Time
+-- 	mmnus : Last Maintenance User
+-- 	mendt : Create Date
+-- 	mentm : Create Time
+-- 	menus : Create By User  
+create table gdzc.zmodule ( 
+	mid INTEGER not null GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1 MINVALUE 1 NO MAXVALUE NO CYCLE NO CACHE ORDER),
+	mname VARCHAR(30) ccsid 935 default null,
+	mpid INTEGER default null,
+	mspac VARCHAR(30) ccsid 935 default null,
+	mclas VARCHAR(60) ccsid 935 default null,
+	mtype INTEGER default null,
+	mbubb INTEGER default null,
+	mtext VARCHAR(30) ccsid 935 default null,
+	mused INTEGER default null,
+	mmndt DECIMAL(8,0) default null,
+	mmntm DECIMAL(6,0) default null,
+	mmnus VARCHAR(30) default null,
+	mendt DECIMAL(8,0) default null,
+	mentm DECIMAL(6,0) default null,
+	menus VARCHAR(30) default null, constraint gdzc.zmodule_PK primary key (mid) ); 
+label on column gdzc.zmodule ( 
+	mid TEXT IS 'Module ID',
+	mname TEXT IS 'Module Name',
+	mpid TEXT IS 'Module Parent ID',
+	mspac TEXT IS 'Module NameSpace',
+	mclas TEXT IS 'Module ClassName',
+	mtype TEXT IS 'Module Type',
+	mtext TEXT IS 'Comment',
+	mbubb TEXT IS 'Order',
+	mused TEXT IS 'Module Row Used',
+	mmndt TEXT IS 'Last Maintenance Date',
+	mmntm TEXT IS 'Last Maintenance Time',
+	mmnus TEXT IS 'Last Maintenance User',
+	mendt TEXT IS 'Create Date',
+	mentm TEXT IS 'Create Time',
+	menus TEXT IS 'Create By User' ) ;  
+
+-- 创建新表 gdzc.zuser。
+-- gdzc.zuser : 用户表
+-- 	suser : UserID
+-- 	spwd : Password
+-- 	sname : User Name
+-- 	stype : User Type
+-- 	sdept : Department
+-- 	stext : Comment
+-- 	sused : User Row Used
+-- 	smndt : Last Maintenance Date
+-- 	smntm : Last Maintenance Time
+-- 	smnus : Last Maintenance User
+-- 	sendt : Create Date
+-- 	sentm : Create Time
+-- 	senus : Create By User  
+create table gdzc.zuser ( 
+	suser VARCHAR(30) not null,
+	spwd VARCHAR(50) default null,
+	sname VARCHAR(10) ccsid 935 default null,
+	stype INTEGER default null,
+	sdept VARCHAR(20) ccsid 935 default null,
+	stext VARCHAR(30) ccsid 935 default null,
+	sused INTEGER default null,
+	smndt DECIMAL(8,0) default null,
+	smntm DECIMAL(6,0) default null,
+	smnus VARCHAR(30) default null,
+	sendt DECIMAL(8,0) default null,
+	sentm DECIMAL(6,0) default null,
+	senus VARCHAR(30) default null, constraint gdzc.zuser_PK primary key (suser) );  
+label on column gdzc.zuser ( 
+	suser TEXT IS 'UserID',
+	spwd TEXT IS 'Password',
+	sname TEXT IS 'User Name',
+	stype TEXT IS 'User Type',
+	sdept TEXT IS 'Department',
+	stext TEXT IS 'Comment',
+	sused TEXT IS 'User Row Used',
+	smndt TEXT IS 'Last Maintenance Date',
+	smntm TEXT IS 'Last Maintenance Time',
+	smnus TEXT IS 'Last Maintenance User',
+	sendt TEXT IS 'Create Date',
+	sentm TEXT IS 'Create Time',
+	senus TEXT IS 'Create By User' ) ;
+
+-- 创建新表 gdzc.zaccess。
+-- gdzc.zaccess : 修改锁表
+--	aid : Access ID
+-- 	aname : User By Computor
+-- 	auser : Create By User
+--	amnme : User Module Name
+-- 	adate : Create Date
+-- 	atime : Create Time
+-- 	atext : Comment  
+create table gdzc.zaccess ( 
+	aid INTEGER not null GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1 MINVALUE 1 NO MAXVALUE NO CYCLE NO CACHE ORDER),
+	aname VARCHAR(30) ccsid 935 default null,
+	auser VARCHAR(30) not null,
+	amnme VARCHAR(64) ccsid 935 default null,
+	adate DECIMAL(8,0) default null,
+	atime DECIMAL(6,0) default null,
+	atext VARCHAR(30) ccsid 935 default null, constraint gdzc.zaccess_PK primary key (aid) );  
+label on column gdzc.zaccess ( 
+	aid TEXT IS 'Access ID',
+	aname TEXT IS 'User By Computor',
+	auser TEXT IS 'Create By User',
+	amnme TEXT IS 'User Module Name',
+	adate TEXT IS 'Create Date',
+	atime TEXT IS 'Create Time',
+	atext TEXT IS 'Comment' ) ;
+
+
+create table v61df.gdzc (
+        zcid VARCHAR(12) ccsid 935,
+        zcstat DECIMAL(3,0),
+        zcname VARCHAR(100) ccsid 935,
+	zczjgc DECIMAL(1,0),
+	zcbm DECIMAL(2,0),
+	zccwfl VARCHAR(3),
+	zcfl VARCHAR(9) ccsid 935,
+	zcuf1 VARCHAR(100) ccsid 935,
+	zcuf3 VARCHAR(100) ccsid 935,
+	zcuf4 VARCHAR(100) ccsid 935,
+	zcuf5 VARCHAR(100) ccsid 935,
+	zcuf6 VARCHAR(100) ccsid 935,
+	zcuf7 VARCHAR(100) ccsid 935,
+	zcuf8 VARCHAR(100) ccsid 935,
+	zcuf9 VARCHAR(100) ccsid 935,
+	zczjz DECIMAL(1,0),
+	zczjzz DECIMAL(15,2),
+	zcnx DECIMAL(3,0),
+	zcsynx DECIMAL(3,0),
+	zcdte DECIMAL(8,0),
+	zcyz DECIMAL(15,2),
+	zcljzj DECIMAL(15,2),
+	zcnzj DECIMAL(15,2),
+	zcyzj DECIMAL(15,2),
+	zcjc DECIMAL(15,2),
+	zccz DECIMAL(15,2),
+	htljzj  DECIMAL(15,2),
+	htnzj DECIMAL(15,2),
+	htyzj DECIMAL(15,2),
+	htjc DECIMAL(15,2),
+	htcz DECIMAL(15,2),
+	zcmnth DECIMAL(6,0),
+	zcbfdte DECIMAL(6,0),
+	zcenusr VARCHAR(30) ccsid 935,
+	zcendt DECIMAL(8,0),	
+	zcentm DECIMAL(8,0),	
+	zcmnusr VARCHAR(30) ccsid 935,
+	zcmndt DECIMAL(8,0),	
+	zcmntm DECIMAL(8,0),	
+	zctnusr VARCHAR(30) ccsid 935,
+	zctndt DECIMAL(8,0),	
+	zctntm DECIMAL(8,0), constraint v61df.gdzc_PK primary key (zcid, zczjz));
+
+create table gdzc.gdzjy(
+	gyzjy DECIMAL(6,0));
+
+create table v61df.gdzhzjy(
+	gyzjy DECIMAL(6,0));
+
+create table gdzc.gdfl(
+	gdfl VARCHAR(30),
+	gddesc VARCHAR(100),
+	gdhzdesc VARCHAR(100), constraint gdzc.gdfl_PK primary key (gdfl));
